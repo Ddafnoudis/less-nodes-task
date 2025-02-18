@@ -24,6 +24,7 @@ Two files are generated:
 
 ### Tree of the working environment
 
+```bash
 |-- README.md
 |-- algorithm.py
 |-- data_folder
@@ -32,6 +33,8 @@ Two files are generated:
 |-- generate_data.py
 |-- main.py
 `-- output.py
+```
+
 
 ### Tools
 

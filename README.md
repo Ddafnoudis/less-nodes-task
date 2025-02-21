@@ -35,13 +35,17 @@ Two files are generated:
 `-- output.py
 ```
 
+To run the scriptsm, you need to type the following command:
+```bash
+python main.py
+```
 
 ### Tools
 
 ```bash
-pandas
+pandas==1.5.3
 itertools
-networkx
+networkx==3.2.1
 ```
 
 

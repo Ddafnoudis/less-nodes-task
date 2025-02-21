@@ -35,7 +35,7 @@ Two files are generated:
 `-- output.py
 ```
 
-To run the scriptsm, you need to type the following command:
+To run the script, you need to type the following command:
 ```bash
 python main.py
 ```

@@ -3,6 +3,7 @@ A script that generates a text file with nodes and edges
 (graph.txt)
 """
 import os
+import random
 import pandas as pd
 from pandas import DataFrame
 
@@ -19,11 +20,12 @@ def generate_data(folder_name)-> DataFrame:
     with open("data_folder/graph.txt", "w") as f:
         # Columns
         f.write("node1 node2\n")
-        # Write the rows
-        f.write("1 2\n")
-        f.write("1 3\n")
-        f.write("2 4\n")
-        f.write("3 5\n")
+        # Write 4 rows with random.randint nodes from 1 to 5 without one number in on one row
+        for node in range(4):
+            if node != node:
+                continue
+            else:
+                f.write(f"{random.randint(1, 5)} {random.randint(1, 5)}\n")
 
     # Read and define the data
     data = pd.read_csv("data_folder/graph.txt", sep=" ")
